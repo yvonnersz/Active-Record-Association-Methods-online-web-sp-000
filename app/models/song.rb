@@ -13,5 +13,6 @@ class Song < ActiveRecord::Base
     binding.pry
     song = self.new
     drake = Artist.new(name:"Drake")
+    song.artist = drake
   end
 end
